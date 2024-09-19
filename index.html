@@ -877,9 +877,9 @@ of each drug container to estimate the degradation of the drug.
         `;
         
         // Append the project card to the container
-        //if (project[i].time != project[i].time){
+        if (project[i].time != project[i].time){
           projectsContainer.appendChild(projectElement);
-        //}
+        }
       }
     }
 
@@ -935,14 +935,13 @@ of each drug container to estimate the degradation of the drug.
 
     document.getElementById('load-more-btn').addEventListener('click', () => {
       const projectsToShow = 1; // Number of projects to load each time
-      displayProjects(projects, projectsDisplayed, projectsDisplayed + projectsToShow);
+      displayProjects(projects, projectsDisplayed, projectsDisplayed + projectsToShow, index);
       projectsDisplayed += projectsToShow;
 
       // Hide the button if all projects are displayed
       if (projectsDisplayed >= projects.length) {
         document.getElementById('load-more-btn').style.display = 'none';
       }
-      projects[index].style.display = 'none';
     });
 
 
