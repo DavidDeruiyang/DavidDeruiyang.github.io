@@ -11,9 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  /*color change*/
-  /* border: 6px solid rgba(0, 77, 64, 0.4);   */
-  border: 6px solid rgba(173, 216, 230, 0.4);
+  border: 6px solid rgba(0, 77, 64, 0.4); 
   border-radius: 50% !important;
 }
 
@@ -87,9 +85,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  /*color change*/
-  color: #00796b; 
-  /* color: #64B4F0; */
+  color: #00796b;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -120,9 +116,7 @@
 }
 
 .contactme:hover{
-  /*color change*/
-  color: #00796b; 
-  /* color: #64B4F0; */
+  color: #00796b;
   background-color: white;
 }
 /* main body */
@@ -146,9 +140,7 @@ body {
 } */
 
 a {
-  /*color change*/
-  color: #004d40; 
-  /* color: #3C82B4; */
+  color: #004d40;
 }
 
 /* main blockqoute */
@@ -289,9 +281,6 @@ ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.l
 li.logo span {
   display: block;
   font-size: 14px;
-  justify-content: center; /* Horizontal centering */
-  align-items: center;
-  height: 100%;
 }
 
 .brand-logo h1 {
@@ -484,9 +473,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  /*color change*/
   border-bottom: 3px solid #004d40 !important;
-  /* border-bottom: 3px solid #3C82B4 !important; */
 }
 
 #skills .card.large {
@@ -562,9 +549,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  /*color change*/
-  color: #008073 !important; 
-  /* color: #87CEEB !important; */
+  color: #008073 !important;
 }
 
 /* .teal-text {
@@ -574,9 +559,7 @@ small {
 /* .teal */
 
 .teal {
-  /*color change */
-  background-color: #008073 !important; 
-  /* color: #87CEEB !important; */
+  background-color: #008073 !important;
 }
 
 /* .teal {
