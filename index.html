@@ -184,7 +184,7 @@
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+            class="mdi-av-my-library-books small"></i><span>Recent Projects</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
@@ -477,9 +477,9 @@ of each drug container to estimate the degradation of the drug.
     </section>
 
     <!-- Fourth Section: Recent Projects -->
-    <section id="recentProject" class="section scrollspy">
+    <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Recent Projects</h3>
-      <div id="recent-projects" class="row"></div>
+      <div id="projects" class="row"></div>
 
       <!-- Load More Button -->
       <div id="load-more-container">
@@ -828,7 +828,8 @@ of each drug container to estimate the degradation of the drug.
         shortDescription: "A comprehensive collection website of AI models",
         tools: "HTML, CSS, Python, TiDB",
         detailedDescription: "Model Master is a comprehensive collection website of AI models, catering specifically to AI engineers seeking models based on their requirements in various fields. We scrape data from Hugging Face and store the information using TiDB. The project employs Flask to construct a REST API, processing HTTP requests and interacting with the TiDB C2Q endpoint. The scraped data includes model name, size, popularity, link, task, languages, etc. The front end uses the Webflow content management system and hand-written JavaScript to display the information on a webpage.",
-        githubLink: "https://github.com/AlezHibali/Model_Master_TiDB_Hackathon_2023"
+        githubLink: "https://github.com/AlezHibali/Model_Master_TiDB_Hackathon_2023",
+        time:"20230910"
       },
       {
         title: "AI Pathologist",
@@ -837,13 +838,14 @@ of each drug container to estimate the degradation of the drug.
         shortDescription: "empower large language models (LLM) to conduct speech pathology tests that currently rely on human-administered and diagnosed tests",
         tools: "Python, HTML5, HSS",
         detailedDescription: "use LLM to replicate certain tests that humans have administrated. We will first try to use high-quality models such as GPT-4o, and in further steps, we will transfer to open-source models such as Llama 3.1 by Meta.",
-        githubLink: "https://github.com/yuebinlol/AI_Powered_Speech_Pathologist"
+        githubLink: "https://github.com/yuebinlol/AI_Powered_Speech_Pathologist",
+        time:"20240903"
       },
     ];
 
     // Function to generate HTML for projects
     function displayProjects(projectArray, startIndex, endIndex) {
-      const projectsContainer = document.getElementById('recent-projects');
+      const projectsContainer = document.getElementById('projects');
       
       // Loop through the specified range of projects
       for (let i = startIndex; i < endIndex && i < projectArray.length; i++) {
