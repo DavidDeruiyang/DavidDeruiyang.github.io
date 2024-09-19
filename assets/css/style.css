@@ -281,6 +281,8 @@ ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.l
 li.logo span {
   display: block;
   font-size: 14px;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;
 }
 
 .brand-logo h1 {
