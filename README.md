@@ -71,3 +71,23 @@ To view a live example, **[click here](https://DavidDeruiyang.github.io/)**
 
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
+
+## Activities
+### Activity 1 
+![repo pic](assets/Screenshot/Activity1.png)
+
+### Activity 2
+![a2 repo](https://github.com/DavidDeruiyang/DavidDeruiyang.github.io/blob/29b79b3253a6856a416d4ce70c9d1cbd725e80dc/assets/Screenshot/Activity%202%20repo.png) 
+![a2 homepage](https://github.com/DavidDeruiyang/DavidDeruiyang.github.io/blob/29b79b3253a6856a416d4ce70c9d1cbd725e80dc/assets/Screenshot/Activity%202%20homepage.png)
+
+### Activity 3
+![a3 repo](https://github.com/DavidDeruiyang/DavidDeruiyang.github.io/blob/29b79b3253a6856a416d4ce70c9d1cbd725e80dc/assets/Screenshot/Activity%203%20repo.png)
+![a3 homepage](https://github.com/DavidDeruiyang/DavidDeruiyang.github.io/blob/29b79b3253a6856a416d4ce70c9d1cbd725e80dc/assets/Screenshot/Activity%203%20homepage.png)
+
+### Activity 4
+![a4 repo](https://github.com/DavidDeruiyang/DavidDeruiyang.github.io/blob/29b79b3253a6856a416d4ce70c9d1cbd725e80dc/assets/Screenshot/Activity%204%20repo.png)
+![a4 map](https://github.com/DavidDeruiyang/DavidDeruiyang.github.io/blob/29b79b3253a6856a416d4ce70c9d1cbd725e80dc/assets/Screenshot/Activity%204%20map.png)
+
+### Activity 5
+![a5 repo](https://github.com/DavidDeruiyang/DavidDeruiyang.github.io/blob/29b79b3253a6856a416d4ce70c9d1cbd725e80dc/assets/Screenshot/Activity%205%20repo.png)
+![a5 homepage](https://github.com/DavidDeruiyang/DavidDeruiyang.github.io/blob/29b79b3253a6856a416d4ce70c9d1cbd725e80dc/assets/Screenshot/Activity%205%20recent%20project.png)
