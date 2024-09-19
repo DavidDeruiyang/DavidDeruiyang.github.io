@@ -478,8 +478,8 @@ of each drug container to estimate the degradation of the drug.
 
     <!-- Fourth Section: Recent Projects -->
     <section id="projects" class="section scrollspy">
-      <h3 class="container page-title white-text teal">Recent Projects</h3>
-      <div id="projects" class="row"></div>
+      <h3 class="page-title white-text teal">Recent Projects</h3>
+      <div id="container" class="row"></div>
 
       <!-- Load More Button -->
       <div id="load-more-container">
@@ -877,7 +877,7 @@ of each drug container to estimate the degradation of the drug.
         `;
         
         // Append the project card to the container
-        if (startIndex != exclude_index){
+        if (project[i].time != project[i].time){
           projectsContainer.appendChild(projectElement);
         }
       }
