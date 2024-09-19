@@ -844,7 +844,7 @@ of each drug container to estimate the degradation of the drug.
     ];
 
     // Function to generate HTML for projects
-    function displayProjects(projectArray, startIndex, endIndex) {
+    function displayProjects(projectArray, startIndex, endIndex, exclude_index) {
       const projectsContainer = document.getElementById('projects');
       
       // Loop through the specified range of projects
@@ -877,14 +877,61 @@ of each drug container to estimate the degradation of the drug.
         `;
         
         // Append the project card to the container
-        projectsContainer.appendChild(projectElement);
+        if (startIndex != exclude_index){
+          projectsContainer.appendChild(projectElement);
+        }
       }
     }
 
-    // Initially display only the latest project
-    displayProjects(projects, 0, 1);
+    function displayOneProject(projectArray, index) {
+      const projectsContainer = document.getElementById('projects');
+      
+      // Loop through the specified range of projects
+        const project = projectArray[index];
 
-    let projectsDisplayed = 1; // Initially displayed projects
+        // Create the project card element
+        const projectElement = document.createElement('div');
+        projectElement.className = 'col s12 m6 l4';
+        projectElement.innerHTML = `
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img alt="${project.altText}" src="${project.imageSrc}" style="height: 100%; width: 100%" class="activator" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator teal-text hoverline">${project.title}<i class="mdi-navigation-more-vert right"></i></span>
+              <p>${project.shortDescription}</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+              <ul>
+                <li><b>Tools:</b> ${project.tools}</li>
+                <li>${project.detailedDescription}</li>
+              </ul>
+              <div class="card-action">
+                <a aria-label="Visit the GitHub repo for ${project.title} project" href="${project.githubLink}" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        // Append the project card to the container
+        projectsContainer.appendChild(projectElement);
+    }
+
+
+    // Initially display only the latest project
+    let cTime = 0;
+    let index = -1;
+
+    for (let i = 0; i < projects.length; i++) {
+        if (projects[i].time > cTime){
+          cTime = projects[i].time;
+          index = i;
+        }
+    }
+    displayOneProject(projects, index);
+
+    let projectsDisplayed = 0; // Initially displayed projects
 
     document.getElementById('load-more-btn').addEventListener('click', () => {
       const projectsToShow = 1; // Number of projects to load each time
