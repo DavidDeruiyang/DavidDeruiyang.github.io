@@ -853,6 +853,9 @@ of each drug container to estimate the degradation of the drug.
       },
     ];
 
+    // sort projects by time
+    projects.sort((a, b) => b.time - a.time);
+
     // Function to generate HTML for projects
     function displayProjects(projectArray, startIndex, endIndex) {
       const projectsContainer = document.getElementById('projects');
@@ -890,6 +893,8 @@ of each drug container to estimate the degradation of the drug.
         projectsContainer.appendChild(projectElement);
       }
     }
+
+    displayProjects(projects, 0, 1);
 
     let projectsDisplayed = 1; // Initially displayed projects
 
